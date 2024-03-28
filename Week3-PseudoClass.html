@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>CSS Pseudo classes basics</title>
+        <style>
+            input[type="radio"]:checked + label {color: red}
+            input:enabled {background-color: white;}
+            input:disabled {background-color: gray;}
+            input:focus {background-color: orange;}
+            
+        </style>
+    </head>
+    <body>
+        <h1>Selector</h1>
+        <input type="radio" name="radio" value="radio" id="radio">
+        <label for="radio">Label</label>
+        <h2>Usable</h2>
+        <input>
+        <h2>Unusable</h2>
+        <input disabled="disabled">
+    </body>
+</html>
