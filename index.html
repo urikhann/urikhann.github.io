@@ -1,25 +1,33 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>CSS Selector basics</title>
+        <title>Float Example</title>
         <style>
-            #header h1 {color:red;}
-            #section h1 {color: orange;}
-            table > tbody > tr > th {
-                color: red;
+            img{ 
+                width: 300px;
+                height: 200px;
+                display: block;
+            }
+            figure {
+                width: 300px;
+                background-color: beige;
+                border: 1px solid grey;
+                display: block;
+                float: left;
+                padding: 5px;
+                margin: 10px;
             }
         </style>
+
     </head>
     <body>
-        <table border="1">
-            <tr>
-                <th>Name</th>
-                <th>Area</th>
-            </tr>
-            <tr>
-                <td>Urikhan</td>
-                <td>Incheon Michuhol-gu</td>
-            </tr>
-            </table>
+        <h1>Float Example</h1>        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae diam ac mauris malesuada convallis et non urna. Proin diam tortor, commodo sit amet nisl eu, congue rutrum enim. Phasellus urna erat, pellentesque non nulla non, rutrum suscipit justo. In congue, velit fermentum sagittis blandit, mi eros varius urna, nec suscipit sapien sem id sapien. Proin venenatis, ante ut aliquam feugiat, neque turpis sodales urna, eu efficitur ipsum tortor ac neque. Pellentesque ultrices neque commodo, laoreet massa vel, auctor neque. Quisque dapibus mi in dolor efficitur condimentum. Quisque sit amet eros tortor. Phasellus in venenatis nisl. Pellentesque dictum mauris dictum ipsum ultricies accumsan. Aenean facilisis volutpat tortor, tempus laoreet velit facilisis sed.</p>
+        <figure class = "thumbnail">
+            <img src="museum.jpg"/>
+            <figcaption>British museum</figcaption>
+        </figure>
+        <p>2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae diam ac mauris malesuada convallis et non urna. Proin diam tortor, commodo sit amet nisl eu, congue rutrum enim. Phasellus urna erat, pellentesque non nulla non, rutrum suscipit justo. In congue, velit fermentum sagittis blandit, mi eros varius urna, nec suscipit sapien sem id sapien. Proin venenatis, ante ut aliquam feugiat, neque turpis sodales urna, eu efficitur ipsum tortor ac neque. Pellentesque ultrices neque commodo, laoreet massa vel, auctor neque. Quisque dapibus mi in dolor efficitur condimentum. Quisque sit amet eros tortor. Phasellus in venenatis nisl. Pellentesque dictum mauris dictum ipsum ultricies accumsan. Aenean facilisis volutpat tortor, tempus laoreet velit facilisis sed.</p>
+        <p>3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae diam ac mauris malesuada convallis et non urna. Proin diam tortor, commodo sit amet nisl eu, congue rutrum enim. Phasellus urna erat, pellentesque non nulla non, rutrum suscipit justo. In congue, velit fermentum sagittis blandit, mi eros varius urna, nec suscipit sapien sem id sapien. Proin venenatis, ante ut aliquam feugiat, neque turpis sodales urna, eu efficitur ipsum tortor ac neque. Pellentesque ultrices neque commodo, laoreet massa vel, auctor neque. Quisque dapibus mi in dolor efficitur condimentum. Quisque sit amet eros tortor. Phasellus in venenatis nisl. Pellentesque dictum mauris dictum ipsum ultricies accumsan. Aenean facilisis volutpat tortor, tempus laoreet velit facilisis sed.</p>
     </body>
 </html>
