@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            figcaption.popup {
+                padding: 10px;
+                position: absolute;
+                box-shadow: 0 0 15px;
+                display: none;
+            }
+            figure.thumbnail:hover figcaption.popup {
+                position: absolute;
+                top:0;
+                left: 100px;
+                display: block;
+            }
+        </style>
+
+    </head>
+    <body>
+        <figure class="thumbnail">
+            <img src="museum.jpg"/>
+            <figcaption class="popup">
+                <img src="museum.jpg">
+                <p>British museum</p>
+            </figcaption>
+        </figure>
+    </body>
+</html>
