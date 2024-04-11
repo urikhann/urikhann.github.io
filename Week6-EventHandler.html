@@ -1,0 +1,13 @@
+<input type="submit" id="btn">
+<script>
+    function simpleHandler(){ 
+        alert("button was clicked");
+    }
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", function() {
+        alert("used an anonymous function");
+    });
+    document.querySelector("#btn").addEventListener("click", function () {
+        alert("a different approach but same result");
+    });
+</script>

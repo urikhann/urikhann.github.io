@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+    <form method="post" action="login.php" id="loginForm">
+        <label class="icon" for="username"><i class="fa fa-user fa-fw">
+            </i></label>
+        <input type="text" name="username" id="username" placeholder="UserName" />
+        <label class="icon" for="email"><i class="fa fa-envelope fa-fw">
+            </i></label>
+        <input type="text" name="email" id="email" placeholder="Email" />
+        <label class="icon" for="pass"><i class="fa fa-key fa-fw"></i>
+        </label>
+        <input type="password" name="pass" id="pass" placeholder="Password" />
+        <label class="icon" for="region"><i class="fa fa-home fa-fw"></i>
+        </label>
+        <input type="radio" name="region" id="europe" value="Europe" class="bigRadio"><span>Europe</span>
+        <input type="radio" name="region" id="usa" value="United States" class="bigRadio"><span>United States</span>
+        <label class="icon" for="payment">
+            <i class="fa fa-fw" id="payLabel"></i></label>
+        <select name="payment" id="payment"></select>
+        <label class="icon" id="long" for="save">
+            <i class="fa fa-database fa-fw"></i> Remember Me</label>
+        <input type="checkbox" name="save" id="save" class="bigCheckBox" />
+        <button type="submit"><i class="fa fa-reply fa-fw"></i> Register
+        </button>
+    </form>
+    <div id="errors" class="hidden"></div>
+
+
+
+</body>
+<script>
+    function setBackground(e) {
+        if (e.type()=="focus") {
+            e.target.style.backgroundColor = "FFE393";
+        }
+        else if (e.type()=="blur") {
+            e.target.style.backgroundColor = "white";
+        }
+    }
+    window.addEventListener("load", function() {
+        const cssSelector = "input[type=text], input[type=password]";
+        const fields = document.querySelectorAll(cssSelector);
+        for (let f of fields) {
+            f.addEventListener("focus", setBackground);
+            f.addEventListener("blur", setBackground);
+        }
+    });
+const label = document.querySelector("#paylabel");
+const select = document.querySelector("#payment");
+select.disabled = true;
+const radios = document.querySelectorAll("input[name=region]");
+for (let i = 0; i < radios; i++) {
+    radios[i].addEventListener("change", function (e) {
+        select.disabled = false;
+        select.innerHTML = "";
+        addOption(select, "Select Payment Type", "O");
+        let choice = e.target.value;
+        if (choice=="United States") {
+            label.classList.remove("fa-euro");
+            label.classList.add("fa-dollar");
+            addOption(select, "American Express", "1");
+            addOption(select, "Mastercard", "2");
+            addOption(select, "Visa", "3");
+        }
+        else if (choice == "Europe") {
+            label.classList.remove("fa-dollar");
+            label.classList.add("fa-euro");
+            addOption(select, "Bitcoin", "4");
+            addOption(select, "PayPal", "5");
+        }
+        function addOption(select, optionText, optionValue) {
+            let opt = document.createElement('option');
+            opt.appendChild(documnet.createTextNode(optionText));
+            opt.value = optionValue;
+            select.appendChild(opt);
+        }
+    })
+    const form = document
+}
+</script>
+</html>

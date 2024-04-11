@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div id="main">
+        <ul>
+
+        </ul>
+    </div>
+    <script>
+        // the <ul> already exists somewhere
+        const list = document.querySelector("#main ul");
+        // first approach, construct string with content first
+        let items = '';
+        for (let i = 1; i <= 100; i++) {
+            items += '<li>Item ' + i + '</li>';
+        }
+        // then assign innerHTML to content
+        list.innerHTML = items;
+        // second approach, add content to innerHTML incrementally
+        list.innerHTML = '';
+        for (let i = 1; i <= 100; i++) {
+            list.innerHTML += '<li>Item ' + i + '</li>';
+        }
+    </script>
+</body>
+
+</html>

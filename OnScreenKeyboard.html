@@ -1,98 +1,95 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
-            #keyboard {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-gap: 5px;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On-Screen Keyboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    
+  </script>
+  <style>
+    
 
-#keyboard .row {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-gap: 5px;
-}
+  </style>
+</head>
+<body>
+  <div id="keyboard">
+    <!-- Your button elements go here -->
+    <div class="row">
+      <button class="key s">Esc</button>
+      <button class="key s">`</button>
+      <button class="key s">1</button>
+      <button class="key s">2</button>
+      <button class="key s">3</button>
+      <button class="key s">4</button>
+      <button class="key s">5</button>
+      <button class="key s">6</button>
+      <button class="key s">7</button>
+      <button class="key s">8</button>
+      <button class="key s">9</button>
+      <button class="key s">0</button>
+      <button class="key s">-</button>
+      <button class="key s">=</button>
+      <button class="key s">Backspace</button>
 
-#keyboard .key {
-  background-color: #ddd;
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
-  cursor: pointer;
-}
+    </div>
+    <div class="row">
+      <button class="key">Tab</button>
+      <button class="key">Q</button>
+      <button class="key">W</button>
+      <button class="key">E</button>
+      <button class="key">R</button>
+      <button class="key">T</button>
+      <button class="key">Y</button>
+      <button class="key">U</button>
+      <button class="key">I</button>
+      <button class="key">O</button>
+      <button class="key">P</button>
+      <button class="key">[</button>
+      <button class="key">]</button>
+      <button class="key">\</button>
+      <button class="key">Del</button>
 
-#keyboard .key:active {
-  background-color: #eee;
-}
+    </div>
+    <div class="row">
+      <button class="key">Caps</button>
+      <button class="key">A</button>
+      <button class="key">S</button>
+      <button class="key">D</button>
+      <button class="key">F</button>
+      <button class="key">G</button>
+      <button class="key">H</button>
+      <button class="key">J</button>
+      <button class="key">K</button>
+      <button class="key">L</button>
+      <button class="key">;</button>
+      <button class="key">'</button>
+      <button class="key">Enter</button>
 
-#keyboard .key:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #4CAF50;
-}
-        </style>
-    </head>
-    <body>
-        <div id="keyboard">
-            <div class="row">
-              <button class="key">1</button>
-              <button class="key">2</button>
-              <button class="key">3</button>
-              <button class="key">4</button>
-              <button class="key">5</button>
-              <button class="key">6</button>
-              <button class="key">7</button>
-              <button class="key">8</button>
-              <button class="key">9</button>
-              <button class="key">0</button>
-            </div>
-            <div class="row">
-              <button class="key">Q</button>
-              <button class="key">W</button>
-              <button class="key">E</button>
-              <button class="key">R</button>
-              <button class="key">T</button>
-              <button class="key">Y</button>
-              <button class="key">U</button>
-              <button class="key">I</button>
-              <button class="key">O</button>
-              <button class="key">P</button>
-            </div>
-            <div class="row">
-              <button class="key">A</button>
-              <button class="key">S</button>
-              <button class="key">D</button>
-              <button class="key">F</button>
-              <button class="key">G</button>
-              <button class="key">H</button>
-              <button class="key">J</button>
-              <button class="key">K</button>
-              <button class="key">L</button>
-            </div>
-            <div class="row">
-              <button class="key">Z</button>
-              <button class="key">X</button>
-              <button class="key">C</button>
-              <button class="key">V</button>
-              <button class="key">B</button>
-              <button class="key">N</button>
-              <button class="key">M</button>
-              <button class="key">.</button>
-              <button class="key">,</button>
-              <button class="key">?</button>
-            </div>
-            <div class="row">
-              <button class="key">Shift</button>
-              <button class="key">Ctrl</button>
-              <button class="key">Alt</button>
-              <button class="key">Space</button>
-              <button class="key">Alt</button>
-              <button class="key">Ctrl</button>
-              <button class="key">Backspace</button>
-            </div>
-          </div>
-    </body>
+    </div>
+    <div class="row">
+      <button class="key">Shift</button>
+      <button class="key">Z</button>
+      <button class="key">X</button>
+      <button class="key">C</button>
+      <button class="key">V</button>
+      <button class="key">B</button>
+      <button class="key">N</button>
+      <button class="key">M</button>
+      <button class="key">,</button>
+      <button class="key">.</button>
+      <button class="key">/</button>
+    </div>
+    <div class="row">
+      <button class="key">Func</button>
+      <button class="key">Ctrl</button>
+      <button class="key">Alt</button>
+      <button class="key">Lang</button>
+      <button class="key">Backspace</button>
+      <button class="key">Lang</button>
+      <button class="key">Alt</button>
+    </div>
+  </div>
+</body>
 </html>
