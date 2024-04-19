@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            /*
+            $('img').attr('alt', 'jQuery 라이브러리를 사용한 속성 지정');
+            $('img').attr('src', 'http://via.placeholder.com/100x100');
+            $("img").attr('width', '100');
+            
+           $('img').attr({
+                alt: 'jquery library attr',
+                src: 'http://via.placeholder.com/100x100',
+                width: 100
+           })
+            */
+            $('img').attr({
+                alt: 'jquery library attr',
+                src: function (index) {
+                    let size = (index + 1) * 100;
+                    return 'http://via.placeholder.com/' + size + 'x100';
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <img>
+    <img>
+    <img>
+</body>
+
+</html>
