@@ -63,7 +63,7 @@
     const container = document.querySelector('#react-container');
     ReactDOM.createRoot(container).render(
       <section className="content box">
-        {comps.map((c, indx) => <Company data={c} key={indx} />)}
+        {comps.map((c, idx) => <Company data={c} key={idx} />)}
       </section>
     );
 

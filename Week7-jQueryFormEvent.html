@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <title>jQuery Basic</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('form').submit(function (event) {
+                let value = $('input').val();
+                if (value.replace(/[가-힣]/g, '').length == 0) {
+                    alert('executing.');
+                }
+                else {
+                    alert('Insert your name in Korean.');
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+
+</body>
+    <form>
+        <label>Name</label>
+        <input type="text">
+        <input type="submit">
+    </form>
+</html>
