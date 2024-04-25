@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        #container {
+            border: 2px solid;
+            padding: 5px;
+        }
+        #nav {
+            display: flex;
+            border: solid 2px;
+        }
+
+        #upList {
+            overflow: hidden;
+            float:right;
+        }
+
+        #upListli {
+            list-style: none;
+            float: left;
+            padding: 15px;
+        }
+
+        li:first-child {
+            border-radius: 10px 0 0 10px;
+        }
+        li:last-child {
+            border-radius: 0 10px 10px 0;
+        }
+        li:nth-child(2n) {
+            background-color: #FF0003;
+        }
+        li:nth-child(2n + 1) {
+            background-color: #800000;
+        }
+
+        #leftMenu {
+            padding: 10px;
+            width: 20%;
+            background-color: gray;
+            float: left;
+            overflow: hidden;
+        }
+        #leftMenu li {
+            text-decoration: none;
+            background-color: gray;
+            border-radius: 0%;
+        }
+        main {
+            width: 80%;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+    <div id="nav">
+        <img height="70px" src="https://www.inha.ac.kr/sites/kr/images/logo.png" alt="Inha University Logotype">
+        <ul id="upList">
+            <li id="upListli">교육</li>
+            <li id="upListli">입학/취업</li>
+            <li id="upListli">산학/연구</li>
+            <li id="upListli">학사</li>
+            <li id="upListli">대학생활</li>
+            <li id="upListli">인하소식</li>
+            <li id="upListli">인하소개</li>
+        </ul>
+    </div>
+    <div id="leftMenu">
+        <ul>
+            <li>뉴스</li>
+            <li>소식</li>
+            <li>연구</li>
+            <li>서비스</li>
+            <li>SNS</li>
+        </ul>
+    </div>
+    <div id="main">
+        <h2>창학이념과 교육목표</h2>
+        <h3>인격도야, 진리탐구, 사회봉사</h3>
+        <p>우리 대학교는 1954년 조국부강, 민족번영의 염원으로 개교하여 창의, 근면, 봉사의 창학정신을 구현하기 위한 인격도야, 진리탐구, 사회봉사의 3대교육 이념을 표방하고 있다.<br>
+            이는 교훈 「眞」과 함께 연구하는 대학으로서의 참된 인간 수련을 통하여 국가와 인류사회 발전에 공헌하려는 의욕적 자세와 세계로 웅비하는 발전 「仁荷」의 의지 및 진리 탐구를 위한 학문에의 열정을
+            집약한 것이다. 위의 이념을 기초로 우리 대학은 인격을 도야하고, 건전한 사상을 함양하는 동시에 심오한 학술이론과 그 응용방법을 연구, 교수하여 국가와 인류사회발전에 공헌할 수 있는 지도적
+            인재양성을 교육목적으로 두고 있다.</p>
+    </div>
+</div>
+</body>
+
+</html>
