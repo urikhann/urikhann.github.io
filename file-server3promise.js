@@ -26,7 +26,7 @@ const server = http.createServer((req, resp) => {
     if (urlFile.length == 1) urlFile = "/index.html";
     console.log("Filename in URL=" + urlFile);
     // turn it into the actual file system filename 
-    const localPath = __dirname;
+    const localPath = __dirname + "/public";
     let localFile = path.join(localPath, urlFile);
     console.log("Filename on device=" + localFile);
     // try reading the file
