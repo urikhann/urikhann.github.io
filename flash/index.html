@@ -1,27 +1,86 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Flashcard</title>
-        <style>
-            body {
-                background: #F3ECE3;
 
-            }
-        </style>
-    </head>
-    <body>
-        <div class="header">
-            <h1>Flashcard webpage</h1><br>
-            <!--Header and number of current cards displayed here-->
-        </div>
+<head>
+    <title>Flashcard</title>
+    <style>
+        body {
+            background: #F3ECE3;
+        }
+
+        header {
+            border: 0 0 10px 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 3fr 7fr;
+            align-items: stretch;
+            justify-items: center;
+        }
+
+        .preview {
+            border: solid black 0 0 10 0;
+            float: left;
+            width: 300px;
+            border: 10px;
+            position: absolute;
+            overflow-y: scroll;
+            display: grid;
+            grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+            align-items: center;
+        }
+
+        .card {
+            height: 100px;
+            width: 166px;
+            border: 1px;
+        }
+
+        .current-card {
+            margin: 50px;
+            padding: 20px;
+            align-content: center;
+            float: right;
+            height: 300px;
+            width: 500px;
+            border-radius: 30px;
+            background-color: azure;
+        }
+
+        button {
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Flashcard webpage</h1>
+        <hr>
+        <!--Header and number of current cards displayed here-->
+    </div>
+    <div class="container">
         <div class="current-card">
             <!--Currently selected card appears here-->
+            <div class="menu">
+                <!--Options of actions are displayed here as buttons-->
+                <button id="add">Add new card</button>
+                <button id="shuffle">Shuffle all cards</button>
+            </div>
+        </div>
+        <div class="preview">
+            <!--Preview of all cards-->
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
 
         </div>
-        <div class="menu">
-            <!--Options of actions are displayed here as buttons-->
-            <button id="add">Add new card</button>
-            <button id="shuffle">Shuffle all cards</button>
-        </div>
-    </body>
+        
+    </div>
+</body>
+
 </html>
